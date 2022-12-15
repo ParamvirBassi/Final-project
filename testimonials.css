@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.945);
+}
+.container{
+ position: fixed;
+    margin-top: 0%;
+    width:100vw;
+    height:70px;
+    background-color: black;
+    z-index:5;
+}
+
+.navbar{
+   
+   position: sticky;
+   top:5px;
+    display:flex;
+    justify-content:flex-end;
+  padding:20px;
+  background-color: black;
+  
+
+}
+
+
+.items{
+    overflow: hidden;
+    display: inline;
+list-style-type:none;
+cursor: pointer;
+
+
+margin: 10px;
+padding:10px;
+border:1px solid transparent;
+border-radius: 15px;
+background-color: transparent;
+transition: all 0.4s ease-in-out;
+}
+.logo{
+    position: absolute;
+    height: 60px;
+    z-index: 5;
+ left:40px;  
+}
+
+.items>a{
+    text-decoration: none;
+    color:rgb(54, 187, 54);
+    font-size: 1rem;
+    border:2px solid black;
+    padding:0px 0px;
+    font-weight:bold;
+    transition:1.3s;
+
+
+}
+
+.items>a:hover{
+    background-color: rgb(44, 170, 44);
+    color: black;
+    text-shadow:2px 4px 3px 2px;
+    box-shadow:4px 3px 2px 5px,
+    2px 3px 6px 2px,
+    5px 0px 1px 4px,
+    3px 2px 0px 1px;
+    padding:8px 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.items:hover>a{
+    color:black;
+
+}
+.section-2{
+    text-align:center;
+    padding-top:70px;
+    background-color:Black;
+  
+    border:2px solid transparent;
+    border-radius: 6px;
+}
+h2{
+	font-size:40px;
+	-webkit-text-stroke-color: hsl(124, 60%, 40%);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: rgb(30, 31, 14);
+
+}
+.sp
+{
+
+	
+	margin-top: 70px;
+ 
+margin-bottom: 80px;
+}  
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+justify-items: start;
+	background-color: whitesmoke;
+    opacity:0.7;
+    border-radius:12px;
+    width:90%;
+    margin-bottom: 5%;  
+    height:fit-content;  
+}
+.cardin{
+   
+    padding-top: 20px;
+    width:20vw;
+    border: 1px solid black;
+}
+.review{
+    justify-content: center;
+    
+    padding: 50px;
+    width:70vw;
+    border: 1px solid black;
+}
+.cardin>h1{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 5ch;
+    line-height: 90px;
+}
+.rating{
+     margin-top: auto;
+    margin-bottom: auto;
+    padding: auto;
+}
+
+.card>p{
+   padding:0px 70px;
+    margin-top:50px;
+    line-height: 1.7rem;
+
+}
+
+.card:hover
+{
+transform: scale(1.1);
+transition: 0.5s;
+background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+color:black;
+}
+
+
+@media screen and (max-width:1000px) {
+    .container{
+        height: fit-content;
+        bottom:0px; 
+    }
+    .navbar{
+        height: fit-content;
+           bottom:0px;   
+           justify-content: center; 
+    }
+    
+    .logo{
+       visibility: hidden;
+    }
+   
+
+    
+}

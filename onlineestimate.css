@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.945);
+}
+.container{
+ position: relative;
+    margin-top: 0px;
+    width:100vw;
+    height:70px;
+}
+
+.navbar{
+   
+   position: sticky;
+   top:0px;
+    display:flex;
+    justify-content:flex-end;
+  padding:20px;
+  
+
+}
+
+
+.items{
+    overflow: hidden;
+    display: inline;
+list-style-type:none;
+cursor: pointer;
+
+
+margin: 10px;
+padding:10px;
+border:1px solid transparent;
+border-radius: 15px;
+background-color: transparent;
+transition: all 0.4s ease-in-out;
+}
+.bar1,.bar2,.bar3{
+    visibility: hiden;
+    overflow: hidden;
+    
+border-radius: 5px;
+    width:35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+}
+.hcont{
+    position: absolute;
+    visibility: hidden;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.hitems{
+visibility: hiden;
+width:50vw;
+display: block;
+list-style-type:none;
+cursor: pointer;
+text-align: center;
+font-weight: 800;
+margin: 30px 10px;
+
+padding:10px;
+border:5px solid transparent;
+border-radius: 30px;
+background-color:#45f3ff;
+transition: all 0.4s ease-in-out;
+
+}
+.hitems>a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 1rem;
+    border:2px solid transparent;
+    padding:0px 0px;
+    font-weight:bold;
+    transition:1.3s;
+}
+.hitems:hover{
+    text-shadow:2px 4px 3px 2px;
+    box-shadow:4px 3px 2px 5px,
+    2px 3px 6px 2px,
+    5px 0px 1px 4px,
+    3px 2px 0px 1px;
+    padding:8px 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+
+}
+.logo{
+    position: absolute;
+    height: 40px;    
+    left:40px;  
+}
+
+.items>a{
+    text-decoration: none;
+    color:#45f3ff;
+    font-size: 1rem;
+    border:2px solid transparent;
+    padding:0px 0px;
+    font-weight:bold;
+    transition:1.3s;
+    font-size: 1.2rem;
+
+
+}
+.hmenu{
+    visibility: hidden;
+    border-left: 0px;
+    border:1px solid transparent;
+    border-radius: 0px 10px 10px;
+    width :55vw;
+    height:80vh;
+    background-color: rgb(56, 37, 37);
+}
+.items>a:hover{
+    background-color:#45f3ff;
+    color: black;
+    text-shadow:2px 4px 3px 2px;
+    box-shadow:4px 3px 2px 5px,
+    2px 3px 6px 2px,
+    5px 0px 1px 4px,
+    3px 2px 0px 1px;
+    padding:8px 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.items:hover>a{
+    color:black;
+
+}
+
+
+
+@media screen and (max-width:900px) {
+    .navbar{
+               visibility: hidden;
+    }
+    
+
+    
+}
+#services{
+position:relative;
+display:flex;   
+color:aliceblue;
+width:75vw;
+height:150vh;
+
+align-items:center;
+flex-direction: column;
+border-radius:8px;
+justify-content: space-between;
+margin-top:60px;
+margin-left:auto;
+margin-right: auto;
+padding:35px 0px;
+overflow: hidden;
+font-size:1.4rem;
+line-height:1rem;
+padding-right:60px;
+padding-left:50px;
+}
+/* #services::before{
+    content:'';
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:75vw;
+    height: 100vh;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff,0.3);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    
+} */
+#services::after{
+    content:'';
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:75vw;
+    height: 150vh;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    opacity:0.3;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -2s;
+}
+@keyframes animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+#services>div{
+    width: inherit;
+    margin:10px;
+    display: flex;
+   justify-content: space-between;
+}
+#total{
+    color:#45f3ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width:fit-content;
+    padding:0px 8px;
+    padding-left: 20px;
+    border:2px solid #45f3ff;
+    border-radius:4px;
+    margin:0px auto;
+    margin-top:30px;
+    margin-bottom:20px;
+}
